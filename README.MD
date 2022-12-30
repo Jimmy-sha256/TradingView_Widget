@@ -25,8 +25,10 @@ sudo ufw allow 'Apache'
 ```
 
 ```bash
-sudo systemctl status apache2 | cat
+sudo systemctl status apache2 
 ```
+
+Press q to retrun shell prompt
 
 ```bash
 hostname -I
