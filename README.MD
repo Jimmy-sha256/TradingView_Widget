@@ -106,7 +106,7 @@ sudo systemctl reload apache2
 
 | Command | Description |
 | ------- | ----------- |
-|`sudo systemctl start apache2 ` | Start Server |
+|`sudo systemctl start apache2` | Start Server |
 |`sudo systemctl stop apache2` | Stop Server |
 |`sudo systemctl reload apache2` | Update New Configurations |
 |`sudo systemctl enable apache2` | Start Server On Boot |
