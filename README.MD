@@ -39,9 +39,6 @@ Open web page http://10.0.2.15 replace ip with hostname -I output
 
 ```bash
 sudo mkdir -p /var/www/my_site.com/html
-```
-
-```bash
 sudo chown -R $USER:$USER /var/www/my_site.com/html
 sudo chmod -R 755 /var/www/my_site.com
 ```
@@ -51,26 +48,20 @@ sudo cp /home/jim/TV_Widget/index.html /var/www/my_site.com/html/index.html
 ```
 
 ```bash
-sudo vi /etc/apache2/sites-available/my_site.com.conf
+sudo vi /etc/apache2/sites-available/000-default.conf
 ```
 
 ```vim
 <VirtualHost *:80>
 ServerAdmin admin@my_site.com
-ServerName my_sitecom.
-ServerAlias my_sitecom.
+ServerName my_site.com
+ServerAlias my_site.com
 DocumentRoot /var/www/my_site.com/html
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
 
-```bash
-sudo a2dissite 000-default.conf
-sudo a2ensite my_site.com.conf
-sudo systemctl restart apache2
-cd
-```
 
 ```bash
 sudo apache2ctl configtest
@@ -81,7 +72,7 @@ sudo vi /etc/apache2/conf-available/servername.conf
 ```
 
 ```vim
-ServerName my_sitecom.
+ServerName my_site.com
 ```
 
 ```bash
@@ -91,4 +82,12 @@ sudo systemctl reload apache2
 
 ```bash
 sudo apache2ctl configtest
+```
+
+```bash
+sudo vi /etc/hosts
+```
+
+```vim
+127.0.0.1   localhost   my_site.com
 ```
