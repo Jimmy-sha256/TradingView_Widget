@@ -62,11 +62,6 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
 
-
-```bash
-sudo apache2ctl configtest
-```
-
 ```bash
 sudo vi /etc/apache2/conf-available/servername.conf
 ```
@@ -78,8 +73,9 @@ ServerName my_site.com
 ```bash
 sudo a2enconf servername
 sudo systemctl reload apache2
-sudo apache2ctl configtest
 ```
+
+* Add Server Name to /etc/hosts
 
 ```bash
 sudo vi /etc/hosts
@@ -87,4 +83,8 @@ sudo vi /etc/hosts
 
 ```vim
 127.0.0.1   localhost   my_site.com
+```
+
+```bash
+sudo systemctl reload apache2
 ```
