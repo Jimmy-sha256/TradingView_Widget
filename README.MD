@@ -78,9 +78,6 @@ ServerName my_site.com
 ```bash
 sudo a2enconf servername
 sudo systemctl reload apache2
-```
-
-```bash
 sudo apache2ctl configtest
 ```
 
