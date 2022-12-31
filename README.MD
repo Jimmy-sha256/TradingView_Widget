@@ -1,4 +1,6 @@
-# Trading View Widget for Side View Extension
+# Trading View Widget for FireFox Side View Extension
+
+![](images/preview.png)
 
 ## Requirements
 
@@ -9,7 +11,7 @@ Mozilla extension: Side View
 * https://github.com/mozilla/side-view/
 
 
-## Install
+## Install Ubuntu 20.04
 
 Grant correct permissions and execute setup.sh to configure apache2 server
 
