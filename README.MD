@@ -1,4 +1,4 @@
-# Trading View Widget for FireFox Side View Extension
+# Trading View Widget Web Page for FireFox Side View Extension
 
 ![](images/preview.png)
 
