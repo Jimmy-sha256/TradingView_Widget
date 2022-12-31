@@ -42,8 +42,7 @@ add tickers to `index.html` like below example starting on line 34 of `index.htm
               {"s": "OANDA:XAGUSD"},
               {"s": ""}
             ]
-          }]
-        }
+          }]        
 ```
 
 If `index.html` is changed from within the `TV_Widget/` project folder, copy the new version of `index.html` to `/var/www/widget.tv/html/` folder.
