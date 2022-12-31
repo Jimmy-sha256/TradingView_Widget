@@ -25,12 +25,12 @@ ServerAlias widget.tv
 DocumentRoot /var/www/widget.tv/html
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>" >> /etc/apache2/sites-available/000-default.conf
+</VirtualHost>" | sudo tee /etc/apache2/sites-available/000-default.conf
 
 # create servername.conf file
 sudo touch /etc/apache2/conf-available/servername.conf
 
-echo "ServerName widget.tv" >> /etc/apache2/conf-available/servername.conf
+echo "ServerName widget.tv" | sudo tee /etc/apache2/conf-available/servername.conf
 
 sudo a2enconf servername
 sudo systemctl reload apache2
