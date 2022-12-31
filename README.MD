@@ -3,8 +3,10 @@
 ## Requirements
 
 Mozilla extension: Side View
-https://addons.mozilla.org/en-US/firefox/addon/side-view/
-https://github.com/mozilla/side-view/
+
+* https://addons.mozilla.org/en-US/firefox/addon/side-view/
+
+* https://github.com/mozilla/side-view/
 
 
 ## Install
@@ -31,9 +33,6 @@ add tickers to `index.html` like below
               {"s": "INDEX:BTCUSD"},
               {"s": "INDEX:ETHUSD"},
               {"s": "CAPITALCOM:DXY"},
-              {"s": "TVC:US10Y"},
-              {"s": "TVC:EU10Y"},
-              {"s": "TVC:GB10Y"},
               {"s": "FOREXCOM:SPXUSD"},
               {"s": "FOREXCOM:NSXUSD"},
               {"s": "FOREXCOM:DJI"},
@@ -45,7 +44,7 @@ add tickers to `index.html` like below
         }
 ```
 
-If `index.html` is changed from within the project folder, copy the new version of `index.html` to site folder.
+If `index.html` is changed from within the `TV_Widget/` project folder, copy the new version of `index.html` to `/var/www/widget.tv/html/` folder.
 
 Reload server to apply new configuration
 
