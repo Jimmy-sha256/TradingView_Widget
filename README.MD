@@ -9,10 +9,10 @@ https://github.com/mozilla/side-view/
 
 ## Install
 
-Grant correct permissions and execute run.sh to configure apache2 server
+Grant correct permissions and execute setup.sh to configure apache2 server
 
 ```sh
-sudo chmod 777 run.sh && ./run.sh
+sudo chmod 777 setup.sh && ./setup.sh
 ```
 
 Check installation success by opening http://widget.tv 
