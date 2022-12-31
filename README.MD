@@ -25,7 +25,7 @@ Check installation success by opening http://widget.tv
 
 Get ticker symbol from https://www.tradingview.com/widget/market-quotes/
 
-add tickers to `index.html` like below
+add tickers to `index.html` like below example starting on line 34 of `index.html`
 
 ```json
           "tabs": [{
