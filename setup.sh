@@ -13,7 +13,7 @@ sudo chown -R $USER:$USER /var/www/widget.tv/html
 sudo chmod -R 755 /var/www/widget.tv
 
 # copy index.html into site folder
-sudo cp /home/jim/TV_Widget/index.html /var/www/widget.tv/html/index.html
+sudo cp /home/jim/TradingView_Widget/index.html /var/www/widget.tv/html/index.html
 
 # create virtual host conf file
 sudo touch /etc/apache2/sites-available/000-default.conf
